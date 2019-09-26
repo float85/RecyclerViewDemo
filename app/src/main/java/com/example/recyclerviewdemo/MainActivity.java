@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
         contacts = new ArrayList<>();
 
-
         contact1 = new Contact("Mr A", "0912333333");
         contact2 = new Contact("Mr B", "0912334444");
         contact3 = new Contact("Mr C", "0912355555");
@@ -57,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClickPhone(Contact contactPhone) {
 
-                //Truyền 1 đối tượng Object 
+                //Truyền 1 đối tượng Object
                 Intent intent = new Intent(getBaseContext(), SendObjectData.class);
                 intent.putExtra("object", contactPhone);
                 startActivity(intent);
